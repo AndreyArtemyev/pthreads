@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  zts:
+    container_name: pthreads-backend-zts
+    working_dir: /pthreads
+    build:
+      context: ./configs/php
+    volumes:
+      - ..:/pthreads/ #php-code
